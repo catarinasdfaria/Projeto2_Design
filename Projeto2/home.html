@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madeira - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><img src="violet-flower.png" alt="Madeira" style="height: 1.8rem; vertical-align: middle;"> Madeira</h1>
+                <div class="settings-bar">
+                    <span class="lang-selector">PT | EN</span>
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img src="sun.png" alt="Modo Claro" class="theme-icon light-icon">
+                        <img src="night-mode.png" alt="Modo Escuro" class="theme-icon dark-icon">
+                    </label>
+                    <span class="currency-selector">€ | $</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="experiencias.html">Experiências</a></li>
+                <li><a href="inspiracao.html">Inspiração</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="carrinho.html" class="emoji-nav"><img src="shopping-cart.png" alt="Carrinho" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="favoritos.html" class="emoji-nav"><img src="heart.png" alt="Favoritos" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="notificacoes.html" class="emoji-nav"><img src="bell.png" alt="Notificações" style="height:1.3em;vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Bem-vindo à Ilha da Madeira</h2>
+                <p>Descubra a pérola do Atlântico, onde a natureza exuberante encontra a cultura rica e a hospitalidade calorosa.</p>
+                <a href="experiencias.html" class="btn-primary">Explorar Experiências</a>
+            </div>
+        </section>
+
+        <section class="search-bar">
+            <div class="search-container">
+                <div class="search-field">
+                    <label for="search-lugares">Lugares</label>
+                    <div class="popover-wrapper">
+                        <input type="text" id="search-lugares" autocomplete="off">
+                        <div class="popover-exemplo">
+                            Exemplos: Funchal (Capital), Costa Norte, Costa Sul, Porto Santo
+                        </div>
+                    </div>
+                </div>
+                <div class="search-field">
+                    <label for="search-atividades">Atividades</label>
+                    <div class="popover-wrapper">
+                        <input type="text" id="search-atividades" autocomplete="off">
+                        <div class="popover-exemplo">
+                            Exemplos: Carros de Cesto do Monte, Levadas, Surf, Gastronomia, Jardins
+                        </div>
+                    </div>
+                </div>
+                <div class="search-button">
+                    <button onclick="window.location.href='erro.html'">Pesquisar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h3>Porquê Visitar a Madeira?</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Paisagens Deslumbrantes</h4>
+                        <p>Montanhas verdejantes, falésias dramáticas e vistas oceânicas inesquecíveis.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Jardins Exóticos</h4>
+                        <p>Flora subtropical única com jardins botânicos mundialmente reconhecidos.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Gastronomia & Vinho</h4>
+                        <p>Saboreie o famoso Vinho da Madeira e a gastronomia local autêntica.</p>
+                    </div>
+                    <div class="card">
+                        <h4>Aventura</h4>
+                        <p>Trilhas pelas levadas, surf, mergulho e atividades para todos os gostos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="regions-preview">
+            <div class="container">
+                <h3>Explore por Região</h3>
+                <div class="regions-grid">
+                    <div class="region-card">
+                        <h4>Funchal</h4>
+                        <p>Capital vibrante com história, cultura e ótimas compras.</p>
+                    </div>
+                    <div class="region-card">
+                        <h4>Costa Norte</h4>
+                        <p>Paisagens dramáticas e natureza selvagem.</p>
+                    </div>
+                    <div class="region-card">
+                        <h4>Costa Sul</h4>
+                        <p>Praias, sol e clima ameno todo o ano.</p>
+                    </div>
+                    <div class="region-card">
+                        <h4>Porto Santo</h4>
+                        <p>Ilha dourada com praias de areia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Descubra Madeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

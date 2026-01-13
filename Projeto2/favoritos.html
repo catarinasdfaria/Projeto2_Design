@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - Madeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><img src="violet-flower.png" alt="Madeira" style="height: 1.8rem; vertical-align: middle;"> Madeira</h1>
+                <div class="settings-bar">
+                    <span class="lang-selector">PT | EN</span>
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img src="sun.png" alt="Modo Claro" class="theme-icon light-icon">
+                        <img src="night-mode.png" alt="Modo Escuro" class="theme-icon dark-icon">
+                    </label>
+                    <span class="currency-selector">€ | $</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="experiencias.html">Experiências</a></li>
+                <li><a href="inspiracao.html">Inspiração</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="carrinho.html" class="emoji-nav"><img src="shopping-cart.png" alt="Carrinho" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="favoritos.html" class="emoji-nav"><img src="heart.png" alt="Favoritos" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="notificacoes.html" class="emoji-nav"><img src="bell.png" alt="Notificações" style="height:1.3em;vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2><img src="heart.png" alt="Carrinho" style="height:1.5em;vertical-align:middle;margin-right:0.4em;"> Meus Favoritos</h2>
+                <p>Lugares e experiências que você adorou</p>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+
+                <!-- Exemplo de items favoritos (estático) -->
+                <!-- Listas Temáticas / Artigos Selecionados -->
+                <div style="margin-top: 4rem;">
+                    <h3>Listas Temáticas & Artigos Selecionados</h3>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Trilhos Imperdíveis da Madeira</h4>
+                                <p><strong>Resumo:</strong> Descubra os melhores trilhos para caminhadas, com paisagens únicas e natureza exuberante.</p>
+                                <div style="margin: 0.7em 0;">
+                                    <span class="experiencia-tag">Idioma: PT</span>
+                                    <span class="experiencia-tag">Datas: 2026</span>
+                                    <span class="experiencia-tag">Participantes: 2-10</span>
+                                    <span class="experiencia-tag">Custo: desde 20€</span>
+                                </div>
+                                <div style="margin: 0.7em 0;">
+                                    <label>Classificação:</label>
+                                    <select style="margin-right:1em;">
+                                        <option>1 estrela</option>
+                                        <option>2 estrelas</option>
+                                        <option>3 estrelas</option>
+                                        <option>4 estrelas</option>
+                                        <option selected>5 estrelas</option>
+                                    </select>
+                                    <label style="display:inline-block;vertical-align:top;">Comentário:</label>
+                                    <textarea style="vertical-align:top;min-width:120px;min-height:2em;">Incrível experiência!</textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Artigo: Gastronomia Madeirense</h4>
+                                <p><strong>Resumo:</strong> Uma seleção dos pratos e bebidas típicas que não pode perder na sua visita à ilha.</p>
+                                <div style="margin: 0.7em 0;">
+                                    <span class="experiencia-tag">Idioma: EN</span>
+                                    <span class="experiencia-tag">Datas: 2026</span>
+                                    <span class="experiencia-tag">Participantes: livre</span>
+                                    <span class="experiencia-tag">Custo: variável</span>
+                                </div>
+                                <div style="margin: 0.7em 0;">
+                                    <label>Classificação:</label>
+                                    <select style="margin-right:1em;">
+                                        <option>1 estrela</option>
+                                        <option>2 estrelas</option>
+                                        <option selected>3 estrelas</option>
+                                        <option>4 estrelas</option>
+                                        <option>5 estrelas</option>
+                                    </select>
+                                    <label style="display:inline-block;vertical-align:top;">Comentário:</label>
+                                    <textarea style="vertical-align:top;min-width:120px;min-height:2em;">Gostei das dicas!</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pesquisa / Lista / Detalhe -->
+                <div style="margin-top: 4rem;">
+                    <h3>Pesquisa de Experiências</h3>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Destaque: Passeio de Barco</h4>
+                                <p><strong>Descrição:</strong> Observação de golfinhos e baleias ao largo da costa.</p>
+                                <p><strong>Itinerário:</strong> Marina do Funchal, costa sul, regresso.</p>
+                                <p><strong>Incluído no serviço:</strong> Barco, guia, seguro, bebidas.</p>
+                                <p><strong>Informações:</strong> Duração: 3h | Recomenda-se protetor solar.</p>
+                                <p><strong>Outras sugestões:</strong> Passeio ao pôr-do-sol, pesca desportiva.</p>
+                                <button class="btn-primary" style="margin-top:0.7em;" onclick="window.location.href='erro.html'">Adicionar aos Favoritos</button>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Destaque: Caminhada nas Levadas</h4>
+                                <p><strong>Descrição:</strong> Explore as famosas levadas da Madeira com guia local.</p>
+                                <p><strong>Itinerário:</strong> Saída do Funchal, trilho Levada dos 25 Fontes, regresso.</p>
+                                <p><strong>Incluído no serviço:</strong> Guia, transporte, seguro, snack.</p>
+                                <p><strong>Informações:</strong> Duração: 4h | Grau: Fácil | Recomenda-se calçado confortável.</p>
+                                <p><strong>Outras sugestões:</strong> Levada do Caldeirão Verde, Levada do Rei.</p>
+                                <button class="btn-primary" style="margin-top:0.7em;" onclick="window.location.href='erro.html'">Adicionar aos Favoritos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Descubra Madeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

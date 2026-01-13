@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caderno de Estilos - Madeira</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos específicos para o caderno */
+        .caderno-section {
+            background-color: var(--cor-branco);
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px var(--cor-sombra);
+        }
+        
+        .caderno-section h3 {
+            color: var(--cor-primaria);
+            border-bottom: 3px solid var(--cor-primaria);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .caderno-section li {
+            list-style: none;
+        }
+        
+        .color-palette {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .color-box {
+            text-align: center;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--cor-sombra);
+        }
+        
+        .color-sample {
+            height: 100px;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+        
+        .color-box h4 {
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+        
+        .color-box p {
+            font-size: 0.9rem;
+            margin: 0.25rem 0;
+        }
+        
+        .typography-sample {
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        .component-demo {
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1rem 0;
+        }
+        
+        .spacing-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+        
+        .spacing-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .spacing-visual {
+            background-color: var(--cor-primaria);
+            height: 20px;
+            border-radius: 4px;
+        }
+        
+        .file-structure {
+            background-color: var(--cor-fundo);
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            line-height: 1.8;
+        }
+        
+        code {
+            background-color: var(--cor-fundo);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: monospace;
+            color: var(--cor-secundaria);
+        }
+        
+        .checklist {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .checklist li {
+            padding: 0.5rem 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><img src="violet-flower.png" alt="Madeira" style="height: 1.8rem; vertical-align: middle;"> Madeira</h1>
+                <div class="settings-bar">
+                    <span class="lang-selector">PT | EN</span>
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img src="sun.png" alt="Modo Claro" class="theme-icon light-icon">
+                        <img src="night-mode.png" alt="Modo Escuro" class="theme-icon dark-icon">
+                    </label>
+                    <span class="currency-selector">€ | $</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="experiencias.html">Experiências</a></li>
+                <li><a href="inspiracao.html">Inspiração</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="carrinho.html" class="emoji-nav"><img src="shopping-cart.png" alt="Carrinho" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="favoritos.html" class="emoji-nav"><img src="heart.png" alt="Favoritos" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="notificacoes.html" class="emoji-nav"><img src="bell.png" alt="Notificações" style="height:1.3em;vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2><img src="text.png" alt="Madeira" style="height: 3rem; vertical-align: middle;"> Caderno de Estilos</h2>
+                <p>Guia completo de design do projeto Madeira</p>
+            </div>
+        </section>
+
+        <div class="container">
+            <!-- Identidade Visual -->
+            <section class="caderno-section">
+                <h3>1. Identidade Visual</h3>
+                <h4>Conceito:</h4>
+                <p>Website sobre um roteiro turístico da Ilha da Madeira, destacando a beleza natural, cultura rica e experiências únicas do arquipélago.</p>
+                <br>
+                <h4>Público-Alvo:</h4>
+                <ul>
+                    <li>Turistas internacionais interessados em natureza e aventura</li>
+                    <li>Famílias em busca de destinos seguros e variados</li>
+                    <li>Entusiastas de caminhadas e atividades ao ar livre</li>
+                </ul>
+            </section>
+
+            <!-- Paleta de Cores -->
+            <section class="caderno-section">
+                <h3>2. Paleta de Cores</h3>
+                
+                <h4>Cores Primárias:</h4>
+                <div class="color-palette">
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #866faa;"></div>
+                        <h4>Roxo Claro</h4>
+                        <p><code>#866faa</code></p>
+                    </div>
+                    
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #92AF05;"></div>
+                        <h4>Verde-amarelado</h4>
+                        <p><code>#92AF05</code></p>
+                    </div>
+                </div>
+
+                <h4>Cores Neutras:</h4>
+                <div class="color-palette">
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #FFFFFF; border: 1px solid #ddd;"></div>
+                        <h4>Branco</h4>
+                        <p><code>#FFFFFF</code></p>
+                        <p>Fundos de cards e header</p>
+                    </div>
+                    
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #FAFAFA;"></div>
+                        <h4>Cinza Claro</h4>
+                        <p><code>#FAFAFA</code></p>
+                        <p>Fundo da página</p>
+                    </div>
+                    
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #212121;"></div>
+                        <h4>Preto Suave</h4>
+                        <p><code>#212121</code></p>
+                        <p style="color: white;">Texto principal</p>
+                    </div>
+                    
+                    <div class="color-box">
+                        <div class="color-sample" style="background-color: #757575;"></div>
+                        <h4>Cinza Médio</h4>
+                        <p><code>#757575</code></p>
+                        <p style="color: white;">Texto secundário</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tipografia -->
+            <section class="caderno-section">
+                <h3>3. Tipografia</h3>
+                
+                <h4>Fonte Principal:</h4>
+                <br>
+                <p><strong>Segoe UI</strong> (com fallbacks: Tahoma, Geneva, Verdana, sans-serif)</p>
+                <br>
+                <h4>Hierarquia Tipográfica</h4>
+                <div class="typography-sample">
+                    <h1 style="font-size: 1.8rem; color: #866faa; font-weight: 700;">H1 - Logo/Marca (1.8rem)</h1>
+                </div>
+                
+                <div class="typography-sample">
+                    <h2 style="font-size: 3rem; font-weight: 700; color: #866faa;">H2 - Títulos Hero (3rem)</h2>
+                </div>
+                
+                <div class="typography-sample">
+                    <h3 style="font-size: 2.5rem; color: #866faa;">H3 - Títulos de Seção (2.5rem)</h3>
+                </div>
+                
+                <div class="typography-sample">
+                    <h4 style="font-size: 1.3rem; color: #866faa;">H4 - Subtítulos (1.3-1.8rem)</h4>
+                </div>
+                
+                <div class="typography-sample">
+                    <p style="font-size: 1rem; line-height: 1.6;">Parágrafo - Corpo de texto (1rem, line-height: 1.6)</p>
+                </div>
+            </section>
+
+            <!-- Espaçamento -->
+            <section class="caderno-section">
+                <h3>4. Espaçamento e Grid</h3>
+                
+                <h4>Sistema de Espaçamento:</h4>
+                <br>
+                <p>Baseado em múltiplos de 0.5rem (8px):</p>
+                <div class="spacing-grid">
+                    <div class="spacing-item">
+                        <div class="spacing-visual" style="width: 4.8px;"></div>
+                        <span>0.3rem (4.8px) - Mínimo</span>
+                    </div>
+                    <div class="spacing-item">
+                        <div class="spacing-visual" style="width: 8px;"></div>
+                        <span>0.5rem (8px) - Pequeno</span>
+                    </div>
+                    <div class="spacing-item">
+                        <div class="spacing-visual" style="width: 16px;"></div>
+                        <span>1rem (16px) - Médio</span>
+                    </div>
+                    <div class="spacing-item">
+                        <div class="spacing-visual" style="width: 32px;"></div>
+                        <span>2rem (32px) - Grande</span>
+                    </div>
+                    <div class="spacing-item">
+                        <div class="spacing-visual" style="width: 64px;"></div>
+                        <span>4rem (64px) - Seções</span>
+                    </div>
+                </div>
+                
+                <h4>Container:</h4>
+                <br>
+                <ul>
+                    <li>Largura máxima: 1200px</li>
+                    <li>Padding lateral: 2rem (32px)</li>
+                    <li>Centralizado com margin: 0 auto</li>
+                </ul>
+            </section>
+
+            <!-- Componentes -->
+            <section class="caderno-section">
+                <h3>5. Componentes</h3>
+                
+                <h4>Botão Primário:</h4>
+                <div class="component-demo">
+                    <a href="#" class="btn-primary">Explorar Experiências</a>
+                </div>
+                <ul>
+                    <li>Background: Verde-amarelado <code>#92AF05</code></li>
+                    <li>Padding: 1rem 2.5rem</li>
+                    <li>Border-radius: 50px (formato pill)</li>
+                    <li>Efeito hover: elevação + sombra</li>
+                </ul>
+                <br>
+                <h4>Card:</h4>
+                <div class="component-demo">
+                    <div class="card" style="max-width: 300px;">
+                        <span class="icon">🏔️</span>
+                        <h4>Título do Card</h4>
+                        <p>Descrição do conteúdo do card com informações relevantes.</p>
+                    </div>
+                </div>
+                <ul>
+                    <li>Background: Branco</li>
+                    <li>Padding: 2rem</li>
+                    <li>Border-radius: 12px</li>
+                    <li>Box-shadow suave</li>
+                    <li>Hover: elevação com translateY(-8px)</li>
+                </ul>
+                <br>
+                <h4>Tags:</h4>
+                <div class="component-demo">
+                    <span class="experiencia-tag">Aventura</span>
+                    <span class="experiencia-tag">Natureza</span>
+                    <span class="experiencia-tag">Família</span>
+                </div>
+                <ul>
+                    <li>Background: Verde-amarelado</li>
+                    <li>Padding: 0.3rem 0.8rem</li>
+                    <li>Border-radius: 20px</li>
+                    <li>Font-size: 0.85rem</li>
+                </ul>
+            </section>
+
+            <!-- Sistema de Tabs -->
+            <section class="caderno-section">
+                <h3>6. Sistema de Tabs</h3>
+                <p>Implementado com radio buttons escondidos e labels clicáveis:</p>
+                <ul>
+                    <li>Radio buttons com <code>display: none</code></li>
+                    <li>Labels funcionam como botões</li>
+                    <li>CSS mostra/esconde conteúdo baseado em <code>:checked</code></li>
+                    <li>Animação de fade-in com CSS</li>
+                </ul>
+            </section>
+
+            <!-- Estrutura do Projeto -->
+            <section class="caderno-section">
+                <h3>7. Estrutura do Projeto</h3>
+                
+                <h4>Páginas Criadas:</h4>
+                <div class="cards" style="margin-top: 1rem;">
+                    <div class="card">
+                        <img src="home-button.png" alt="Home" class="icon" style="width: 60px; height: 60px;">
+                        <h4>home.html</h4>
+                        <p>Página inicial com hero, destaques e preview de regiões</p>
+                    </div>
+                    <div class="card">
+                        <img src="letter-i.png" alt="Geral" class="icon" style="width: 60px; height: 60px;">
+                        <h4>geral.html</h4>
+                        <p>Informações práticas sobre clima, moeda, transporte</p>
+                    </div>
+                    <div class="card">
+                        <img src="target.png" alt="Experiências" class="icon" style="width: 60px; height: 60px;">
+                        <h4>experiencias.html</h4>
+                        <p>Sistema de tabs com 4 regiões e atividades</p>
+                    </div>
+                    <div class="card">
+                        <img src="star.png" alt="Inspiração" class="icon" style="width: 60px; height: 60px;">
+                        <h4>inspiracao.html</h4>
+                        <p>Itinerários sugeridos e dicas de viagem</p>
+                    </div>
+                    <div class="card">
+                        <img src="schedule.png" alt="Reservas" class="icon" style="width: 60px; height: 60px;">
+                        <h4>reservas.html</h4>
+                        <p>Informações sobre alojamento e planeamento</p>
+                    </div>
+                    <div class="card">
+                        <img src="shopping-cart.png" alt="Carrinho_Compras" class="icon" style="width: 60px; height: 60px;">
+                        <h4>carrinho.html</h4>
+                        <p>Carrinho de compras para reservas</p>
+                    </div>
+                    <div class="card">
+                        <img src="heart.png" alt="Favoritos" class="icon" style="width: 60px; height: 60px;">
+                        <h4>favoritos.html</h4>
+                        <p>Lista de experiências favoritas</p>
+                    </div>
+                    <div class="card">
+                        <img src="bell.png" alt="Notificações" class="icon" style="width: 60px; height: 60px;">
+                        <h4>notificacoes.html</h4>
+                        <p>Novidades e atualizações</p>
+                    </div>
+                </div>
+                
+                <h4 style="margin-top: 2rem;">Arquivos do Projeto</h4>
+                <div class="file-structure">
+                    /test/<br>
+                    ├── home.html<br>
+                    ├── geral.html<br>
+                    ├── erro.html<br>
+                    ├── experiencias.html<br>
+                    ├── inspiracao.html<br>
+                    ├── reservas.html<br>
+                    ├── carrinho.html<br>
+                    ├── favoritos.html<br>
+                    ├── notificacoes.html<br>
+                    ├── styles.css<br>
+                    ├── caderno_estilos.html<br>
+                    └── *.png (imagens)
+                </div>
+            </section>
+
+            <!-- Responsividade -->
+            <section class="caderno-section">
+                <h3>8. Responsividade</h3>
+                
+                <div class="cards">
+                    <div class="card">
+                        <h4>Desktop (> 768px)</h4>
+                        <ul style="text-align: left;">
+                            <li>Navbar horizontal</li>
+                            <li>Grids com múltiplas colunas</li>
+                            <li>Hero com título 3rem</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h4>Mobile (≤ 768px)</h4>
+                        <ul style="text-align: left;">
+                            <li>Navbar em coluna</li>
+                            <li>Grids em 1 coluna</li>
+                            <li>Hero com título 2rem</li>
+                            <li>Padding e gap reduzidos</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Boas Práticas -->
+            <section class="caderno-section">
+                <h3>9. Boas Práticas Implementadas</h3>
+                <ul class="checklist">
+                    <li>HTML semântico e válido</li>
+                    <li>CSS organizado com comentários</li>
+                    <li>Variáveis CSS para fácil manutenção</li>
+                    <li>Design responsivo mobile-first</li>
+                    <li>Performance otimizada (fonts system-native)</li>
+                    <li>Acessibilidade considerada (contraste WCAG AA)</li>
+                    <li>Código sem JavaScript (CSS puro)</li>
+                    <li>Nomenclatura consistente em português</li>
+                    <li>Estrutura de pastas clara</li>
+                </ul>
+            </section>
+
+            <!-- Informações do Projeto -->
+            <section class="caderno-section">
+                <h3>10. Informações do Projeto</h3>
+                <div class="cards">
+                    <div class="card">
+                        <h4>Data</h4>
+                        <p>Janeiro 2026</p>
+                    </div>
+                    <div class="card">
+                        <h4>Contexto</h4>
+                        <p>Projeto Universitário - Design-H</p>
+                    </div>
+                    <div class="card">
+                        <h4>Tema</h4>
+                        <p>Website com roteiros turísticos sobre a Madeira</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tecnologias -->
+            <section class="caderno-section">
+                <h3>11. Tecnologias Utilizadas</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img src="html-5.png" alt="HTML5" class="icon" style="width: 60px; height: 60px;">
+                        <h4>HTML5</h4>
+                        <p>Estrutura semântica e acessível</p>
+                    </div>
+                    <div class="card">
+                        <img src="css-3.png" alt="HTML5" class="icon" style="width: 60px; height: 60px;">
+                        <h4>CSS3</h4>
+                        <p>Estilos, layouts e animações</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Descubra Madeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

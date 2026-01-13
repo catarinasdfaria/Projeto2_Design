@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiências - Madeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><img src="violet-flower.png" alt="Madeira" style="height: 1.8rem; vertical-align: middle;"> Madeira</h1>
+                <div class="settings-bar">
+                    <span class="lang-selector">PT | EN</span>
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img src="sun.png" alt="Modo Claro" class="theme-icon light-icon">
+                        <img src="night-mode.png" alt="Modo Escuro" class="theme-icon dark-icon">
+                    </label>
+                    <span class="currency-selector">€ | $</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="experiencias.html" class="active">Experiências</a></li>
+                <li><a href="inspiracao.html">Inspiração</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="carrinho.html" class="emoji-nav"><img src="shopping-cart.png" alt="Carrinho" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="favoritos.html" class="emoji-nav"><img src="heart.png" alt="Favoritos" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="notificacoes.html" class="emoji-nav"><img src="bell.png" alt="Notificações" style="height:1.3em;vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Experiências Inesquecíveis</h2>
+                <p>Descubra os melhores lugares e atividades em cada região da Madeira</p>
+            </div>
+        </section>
+
+        <section class="tabs-container">
+            <div class="container">
+                
+                <input type="radio" name="tabs" id="tab-funchal" class="tab-input" checked>
+                <input type="radio" name="tabs" id="tab-norte" class="tab-input">
+                <input type="radio" name="tabs" id="tab-sul" class="tab-input">
+                <input type="radio" name="tabs" id="tab-portosanto" class="tab-input">
+
+                <div class="tabs">
+                    <label for="tab-funchal" class="tab-button">Funchal (Capital)</label>
+                    <label for="tab-norte" class="tab-button">Costa Norte</label>
+                    <label for="tab-sul" class="tab-button">Costa Sul</label>
+                    <label for="tab-portosanto" class="tab-button">Porto Santo</label>
+                </div>
+
+                <!-- Funchal -->
+                <div id="funchal" class="tab-content">
+                    <h3 style="text-align: center; color: var(--cor-secundaria); margin-bottom: 2rem;">Funchal - Capital</h3>
+                    
+                    <h4 style="color: var(--cor-primaria); margin: 2rem 0 1rem; font-size: 1.8rem;"><img src="pin.png" alt="Lugares para Ver" style="height:1.5em;vertical-align:middle;margin-right:0.3em;">Lugares para Ver</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Sé Catedral do Funchal</h4>
+                                <p>Catedral gótica do século XV, um dos principais monumentos religiosos da ilha.</p>
+                                <span class="experiencia-tag">Histórico</span>
+                                <span class="experiencia-tag">Cultural</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Jardim Botânico da Madeira</h4>
+                                <p>5 hectares de flora exótica com vistas panorâmicas sobre o Funchal.</p>
+                                <span class="experiencia-tag">Natureza</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Zona Velha do Funchal</h4>
+                                <p>Bairro histórico com portas pintadas, restaurantes típicos e vida noturna.</p>
+                                <span class="experiencia-tag">Cultura</span>
+                                <span class="experiencia-tag">Gastronomia</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Teleférico do Funchal</h4>
+                                <p>Vista aérea espetacular da cidade até o Monte.</p>
+                                <span class="experiencia-tag">Panorâmica</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Fortaleza de São Tiago</h4>
+                                <p>Fortaleza militar do século XVII com museu de arte contemporânea.</p>
+                                <span class="experiencia-tag">Histórico</span>
+                                <span class="experiencia-tag">Arte</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Mercado dos Lavradores</h4>
+                                <p>Mercado tradicional com frutas exóticas, flores e artesanato local.</p>
+                                <span class="experiencia-tag">Compras</span>
+                                <span class="experiencia-tag">Tradição</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--cor-primaria); margin: 3rem 0 1rem; font-size: 1.8rem;"><img src="target.png" alt="Coisas para Fazer" style="height:1em;vertical-align:middle;margin-right:0.3em;">Coisas para Fazer</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Carros de Cesto do Monte</h4>
+                                <p>Descida tradicional em carrinhos de vime desde o Monte até Livramento.</p>
+                                <span class="experiencia-tag">Aventura</span>
+                                <span class="experiencia-tag">Tradição</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Prova de Vinho da Madeira</h4>
+                                <p>Degustação nas caves históricas de vinho fortificado mundialmente famoso.</p>
+                                <span class="experiencia-tag">Gastronomia</span>
+                                <span class="experiencia-tag">Cultura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Passeio pela Avenida do Mar</h4>
+                                <p>Caminhada à beira-mar com vistas para o porto e o oceano.</p>
+                                <span class="experiencia-tag">Relaxante</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Assistir a um Espetáculo Folclórico</h4>
+                                <p>Jantar com música e danças tradicionais madeirenses.</p>
+                                <span class="experiencia-tag">Cultural</span>
+                                <span class="experiencia-tag">Noturno</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Costa Norte -->
+                <div id="norte" class="tab-content">
+                    <h3 style="text-align: center; color: var(--cor-secundaria); margin-bottom: 2rem;">Costa Norte - Natureza Selvagem</h3>
+                    
+                    <h4 style="color: var(--cor-primaria); margin: 2rem 0 1rem; font-size: 1.8rem;"><img src="pin.png" alt="Lugares para Ver" style="height:1.5em;vertical-align:middle;margin-right:0.3em;">Lugares para Ver</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Santana - Casas Típicas</h4>
+                                <p>Famosas casas triangulares de colmo, património cultural madeirense.</p>
+                                <span class="experiencia-tag">Cultural</span>
+                                <span class="experiencia-tag">Fotografia</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Piscinas Naturais de Porto Moniz</h4>
+                                <p>Piscinas vulcânicas naturais formadas pela lava basáltica.</p>
+                                <span class="experiencia-tag">Natureza</span>
+                                <span class="experiencia-tag">Banhos</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Floresta Laurissilva</h4>
+                                <p>Floresta subtropical Património Mundial da UNESCO com 20 milhões de anos.</p>
+                                <span class="experiencia-tag">UNESCO</span>
+                                <span class="experiencia-tag">Natureza</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Véu da Noiva</h4>
+                                <p>Cascata espetacular que cai diretamente no mar.</p>
+                                <span class="experiencia-tag">Panorâmica</span>
+                                <span class="experiencia-tag">Fotografia</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Queimadas</h4>
+                                <p>Casa de abrigo rodeada de natureza exuberante, início de várias levadas.</p>
+                                <span class="experiencia-tag">Natureza</span>
+                                <span class="experiencia-tag">Caminhadas</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Achadas da Cruz</h4>
+                                <p>Teleférico mais íngreme da Europa com vistas deslumbrantes.</p>
+                                <span class="experiencia-tag">Aventura</span>
+                                <span class="experiencia-tag">Panorâmica</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--cor-primaria); margin: 3rem 0 1rem; font-size: 1.8rem;"><img src="target.png" alt="Coisas para Fazer" style="height:1em;vertical-align:middle;margin-right:0.3em;">Coisas para Fazer</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Trilho das 25 Fontes</h4>
+                                <p>Caminhada pela Levada das 25 Fontes até à cascata impressionante.</p>
+                                <span class="experiencia-tag">Caminhada</span>
+                                <span class="experiencia-tag">Natureza</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Canoagem em Porto Moniz</h4>
+                                <p>Explorar a costa norte de caiaque com grutas e formações rochosas.</p>
+                                <span class="experiencia-tag">Aventura</span>
+                                <span class="experiencia-tag">Desporto</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Observação do Nascer do Sol no Pico Ruivo</h4>
+                                <p>Subida ao ponto mais alto da Madeira (1861m) para vistas panorâmicas.</p>
+                                <span class="experiencia-tag">Caminhada</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Fotografia de Paisagem</h4>
+                                <p>Capturar as paisagens dramáticas da costa norte.</p>
+                                <span class="experiencia-tag">Fotografia</span>
+                                <span class="experiencia-tag">Panorâmica</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Costa Sul -->
+                <div id="sul" class="tab-content">
+                    <h3 style="text-align: center; color: var(--cor-secundaria); margin-bottom: 2rem;">Costa Sul - Sol e Praias</h3>
+                    
+                    <h4 style="color: var(--cor-primaria); margin: 2rem 0 1rem; font-size: 1.8rem;"><img src="pin.png" alt="Lugares para Ver" style="height:1.5em;vertical-align:middle;margin-right:0.3em;">Lugares para Ver</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Praia Formosa</h4>
+                                <p>Maior praia da Madeira com areia escura vulcânica e águas cristalinas.</p>
+                                <span class="experiencia-tag">Praia</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Cabo Girão</h4>
+                                <p>Falésia mais alta da Europa (580m) com plataforma de vidro suspensa.</p>
+                                <span class="experiencia-tag">Panorâmica</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Câmara de Lobos</h4>
+                                <p>Pitoresca vila de pescadores, inspiração de Winston Churchill.</p>
+                                <span class="experiencia-tag">Cultural</span>
+                                <span class="experiencia-tag">Tradição</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Ponta do Sol</h4>
+                                <p>Vila com mais horas de sol da Madeira, clima sempre agradável.</p>
+                                <span class="experiencia-tag">Relaxante</span>
+                                <span class="experiencia-tag">Sol</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Igreja de São Bento</h4>
+                                <p>Igreja do século XVI com magníficos azulejos e talha dourada.</p>
+                                <span class="experiencia-tag">Histórico</span>
+                                <span class="experiencia-tag">Arte</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Ribeira Brava</h4>
+                                <p>Cidade costeira com praia e forte histórico.</p>
+                                <span class="experiencia-tag">Praia</span>
+                                <span class="experiencia-tag">História</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--cor-primaria); margin: 3rem 0 1rem; font-size: 1.8rem;"><img src="target.png" alt="Coisas para Fazer" style="height:1em;vertical-align:middle;margin-right:0.3em;">Coisas para Fazer</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Surf e Bodyboard</h4>
+                                <p>Aproveitar as ondas na Praia Formosa e Jardim do Mar.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Observação de Golfinhos e Baleias</h4>
+                                <p>Passeios de barco para avistar cetáceos no seu habitat natural.</p>
+                                <span class="experiencia-tag">Natureza</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Mergulho</h4>
+                                <p>Explorar a vida marinha nas águas cristalinas da costa sul.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Banhos de Sol</h4>
+                                <p>Relaxar nas praias e piscinas naturais com clima ameno.</p>
+                                <span class="experiencia-tag">Relaxante</span>
+                                <span class="experiencia-tag">Sol</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Ciclismo pela Costa</h4>
+                                <p>Percursos ciclistas ao longo da costa sul com vistas magníficas.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Natureza</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Jantar à Beira-Mar</h4>
+                                <p>Degustar peixe fresco nos restaurantes com vista para o oceano.</p>
+                                <span class="experiencia-tag">Gastronomia</span>
+                                <span class="experiencia-tag">Romântico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Porto Santo -->
+                <div id="portosanto" class="tab-content">
+                    <h3 style="text-align: center; color: var(--cor-secundaria); margin-bottom: 2rem;">Porto Santo - Ilha Dourada</h3>
+                    
+                    <h4 style="color: var(--cor-primaria); margin: 2rem 0 1rem; font-size: 1.8rem;"><img src="pin.png" alt="Lugares para Ver" style="height:1.5em;vertical-align:middle;margin-right:0.3em;">Lugares para Ver</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Praia de Porto Santo</h4>
+                                <p>9 km de areia dourada fina com propriedades terapêuticas.</p>
+                                <span class="experiencia-tag">Praia</span>
+                                <span class="experiencia-tag">Relaxante</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Casa Museu Cristóvão Colombo</h4>
+                                <p>Casa onde o navegador viveu quando visitava Porto Santo.</p>
+                                <span class="experiencia-tag">Histórico</span>
+                                <span class="experiencia-tag">Cultural</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Pico do Castelo</h4>
+                                <p>Ponto mais alto (437m) com vistas panorâmicas de 360° sobre a ilha.</p>
+                                <span class="experiencia-tag">Panorâmica</span>
+                                <span class="experiencia-tag">Caminhada</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Miradouro das Flores</h4>
+                                <p>Vista deslumbrante sobre a costa norte de Porto Santo.</p>
+                                <span class="experiencia-tag">Panorâmica</span>
+                                <span class="experiencia-tag">Fotografia</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Pico de Ana Ferreira</h4>
+                                <p>Formação geológica única com colunas basálticas.</p>
+                                <span class="experiencia-tag">Geologia</span>
+                                <span class="experiencia-tag">Natureza</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Igreja Matriz</h4>
+                                <p>Igreja do século XV no centro da vila.</p>
+                                <span class="experiencia-tag">Histórico</span>
+                                <span class="experiencia-tag">Cultural</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--cor-primaria); margin: 3rem 0 1rem; font-size: 1.8rem;"><img src="target.png" alt="Coisas para Fazer" style="height:1em;vertical-align:middle;margin-right:0.3em;">Coisas para Fazer</h4>
+                    <div class="experiencias-grid">
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Banhos de Areia</h4>
+                                <p>Aproveitar as propriedades terapêuticas da areia de Porto Santo.</p>
+                                <span class="experiencia-tag">Wellness</span>
+                                <span class="experiencia-tag">Saúde</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Desportos Aquáticos</h4>
+                                <p>Windsurf, kitesurf e vela nas águas calmas de Porto Santo.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Aventura</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Golfe</h4>
+                                <p>Jogar no campo de golfe desenhado por Severiano Ballesteros.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Luxo</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Passeios de Bicicleta</h4>
+                                <p>Explarar a ilha em bicicleta pelos caminhos tranquilos.</p>
+                                <span class="experiencia-tag">Desporto</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Snorkeling</h4>
+                                <p>Descobrir a vida marinha nas águas cristalinas.</p>
+                                <span class="experiencia-tag">Natureza</span>
+                                <span class="experiencia-tag">Família</span>
+                            </div>
+                        </div>
+                        <div class="experiencia-item">
+                            <div class="experiencia-content">
+                                <h4>Passeios ao Pôr do Sol</h4>
+                                <p>Caminhar pela praia ao entardecer com vistas espetaculares.</p>
+                                <span class="experiencia-tag">Romântico</span>
+                                <span class="experiencia-tag">Relaxante</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Descubra Madeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

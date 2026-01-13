@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações - Madeira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1><img src="violet-flower.png" alt="Madeira" style="height: 1.8rem; vertical-align: middle;"> Madeira</h1>
+                <div class="settings-bar">
+                    <span class="lang-selector">PT | EN</span>
+                    <label for="theme-toggle" class="theme-toggle-label">
+                        <img src="sun.png" alt="Modo Claro" class="theme-icon light-icon">
+                        <img src="night-mode.png" alt="Modo Escuro" class="theme-icon dark-icon">
+                    </label>
+                    <span class="currency-selector">€ | $</span>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="geral.html">Geral</a></li>
+                <li><a href="experiencias.html">Experiências</a></li>
+                <li><a href="inspiracao.html">Inspiração</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="carrinho.html" class="emoji-nav"><img src="shopping-cart.png" alt="Carrinho" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="favoritos.html" class="emoji-nav"><img src="heart.png" alt="Favoritos" style="height:1.3em;vertical-align:middle;"></a></li>
+                <li><a href="notificacoes.html" class="emoji-nav"><img src="bell.png" alt="Notificações" style="height:1.3em;vertical-align:middle;"></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="highlights">
+            <div class="container" style="max-width: 1100px;">
+                <h2>Notificações & Utilitários</h2>
+                <div class="notificacoes-cards">
+                    <!-- Card Change Log -->
+                    <div class="card">
+                        <h3>Change Log desta aplicação</h3>
+                        <p>Consulte as últimas atualizações, melhorias e correções feitas na plataforma Descubra Madeira.</p>
+                        <ul style="margin:1em 0 0.5em 1.2em; color:var(--cor-texto-claro); font-size:0.98em;">
+                            <li><strong>12/01/2026:</strong> Nova secção de notificações implementada.</li>
+                            <li><strong>10/01/2026:</strong> Correção no sistema de reservas e melhorias de performance.</li>
+                        </ul>
+                        <button class="btn-primary" onclick="window.location.href='erro.html'">Ver Change Log</button>
+                    </div>
+                    <!-- Card Alertas -->
+                    <div class="card">
+                        <h3>Alerta de datas das atividades compradas</h3>
+                        <p>Receba notificações e lembretes das datas das suas atividades e reservas.</p>
+                        <ul style="margin:1em 0 0.5em 1.2em; color:var(--cor-texto-claro); font-size:0.98em;">
+                            <li><strong>Levada dos 25 Fontes:</strong> 15/01/2026 às 09:00</li>
+                            <li><strong>Passeio de Barco:</strong> 18/01/2026 às 14:30</li>
+                        </ul>
+                        <button class="btn-primary" onclick="window.location.href='erro.html'">Ver Alertas</button>
+                    </div>
+                    <!-- Card Recibos -->
+                    <div class="card">
+                        <h3>Recibos de pagamento</h3>
+                        <p>Aceda aos recibos e comprovativos de pagamento das suas compras e reservas.</p>
+                        <ul style="margin:1em 0 0.5em 1.2em; color:var(--cor-texto-claro); font-size:0.98em;">
+                            <li>Recibo #20260112-01 — <strong>Levada dos 25 Fontes</strong> — 35,00€</li>
+                            <li>Recibo #20260110-02 — <strong>Passeio de Barco</strong> — 45,00€</li>
+                        </ul>
+                        <button class="btn-primary" onclick="window.location.href='erro.html'">Ver Recibos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 Descubra Madeira. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
